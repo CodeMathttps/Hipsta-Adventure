@@ -91,13 +91,13 @@ const matrizInimigoTroll = [
 ]
 
 function preload(){
-  imagemCenario = loadImage('./assets/imagens/cenario/floresta.png');
-  imagemPersonagem = loadImage('./assets/imagens/personagem/correndo.png');
-  imagemInimigoGota = loadImage('./assets/imagens/inimigos/gotinha.png');
-  imagemInimigoTroll = loadImage('./assets/imagens/inimigos/troll.png');
+  imagemCenario = loadImage('assets/imagens/cenario/floresta.png');
+  imagemPersonagem = loadImage('assets/imagens/personagem/correndo.png');
+  imagemInimigoGota = loadImage('assets/imagens/inimigos/gotinha.png');
+  imagemInimigoTroll = loadImage('assets/imagens/inimigos/troll.png');
 
-  somDoJogo = loadSound('./assets/sons/trilha_jogo.mp3');
-  somPulo = loadSound('./assets/sons/somPulo.mp3');
+  somDoJogo = loadSound('assets/sons/trilha_jogo.mp3');
+  somPulo = loadSound('assets/sons/somPulo.mp3');
 }
 
 function setup() {
@@ -106,7 +106,7 @@ function setup() {
   
   cenario = new Cenario(imagemCenario, 3);
 
-  inimigoGota = new Inimigo(matrizInimigoGota, imagemInimigoGota, width - width/2, 30, 52, 52, 104, 104);
+  inimigoGota = new Inimigo(matrizInimigoGota, imagemInimigoGota, width + width/2, 30, 52, 52, 104, 104);
   inimigoTroll = new Inimigo(matrizInimigoTroll, imagemInimigoTroll, width * 2, 0, 200, 200, 400, 400);
 
   personagem = new Personagem(matrizPersonagem, imagemPersonagem, 0, 30, 110, 135,  220, 270);
