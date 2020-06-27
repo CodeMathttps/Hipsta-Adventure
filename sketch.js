@@ -113,7 +113,7 @@ function setup() {
   frameRate(40);
 
   
-  //somDoJogo.loop();
+  somDoJogo.loop();
   
 }
 
