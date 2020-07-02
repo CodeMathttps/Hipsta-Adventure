@@ -13,7 +13,7 @@ function setup() {
   }
   jogo.setup();
 
-  //somDoJogo.loop();
+  somDoJogo.loop();
 }
 
 function keyPressed(){
